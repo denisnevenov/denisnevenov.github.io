@@ -23,16 +23,25 @@ btnScroll.addEventListener('click', () => {
 // Screen mode - light/dark
 const themeSwitch = document.getElementById('screenMode');
 const themeLabel = document.querySelector('label[for="screenMode"]');
-const logo = document.querySelector('.logo');
+
+const sourceElement = document.querySelector('.logo-webp');
+const imgElement = document.querySelector('.logo');
 
 function updateTheme(isDark) {
   const theme = isDark ? 'dark' : 'light';
   document.documentElement.setAttribute('data-bs-theme', theme);
 
   themeLabel.textContent = isDark ? 'Dark Theme' : 'Light Theme';
-  logo.src = isDark ? 'assets/img/logo-light.png' : 'assets/img/logo-dark.png';
 
-  localStorage.setItem('theme', theme);
+  if (isDark) {
+    sourceElement.srcset = 'assets/img/logo-light.webp';
+    imgElement.src = 'assets/img/logo-light.png';
+  } else {
+    sourceElement.srcset = 'assets/img/logo-dark.webp';
+    imgElement.src = 'assets/img/logo-dark.png';
+  }
+
+    localStorage.setItem('theme', theme);
 }
 
 const savedTheme = localStorage.getItem('theme');
@@ -45,8 +54,8 @@ themeSwitch.addEventListener('change', () => {
 });
 
 
-//SwiperJs
-var swiper = new Swiper(".mySwiper", {
+//SwiperJs Testimonials
+var swiper = new Swiper(".swiperTestimonials", {
   autoHeight: true,
   pagination: {
     el: ".swiper-pagination",
@@ -68,6 +77,35 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+
+//SwiperJs Modal
+var swiper = new Swiper(".swiperModal", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    1400: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+  },
+});
+
+document.querySelectorAll(".element-action").forEach(button => {
+  button.addEventListener("click", function () {
+    let slideIndex = parseInt(this.getAttribute("data-slide"), 10);
+    
+    setTimeout(() => {
+      swiper.slideTo(slideIndex);
+    }, 300); 
+  });
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting){
@@ -77,4 +115,4 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll('.aos-hidden');
-hiddenElements.forEach((e) => observer.observe(e))
+hiddenElements.forEach((e) => observer.observe(e));

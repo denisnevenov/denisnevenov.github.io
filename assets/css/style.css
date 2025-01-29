@@ -23,6 +23,10 @@ body {
   box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 
+.main {
+  overflow: hidden;
+}
+
 .element {
   border-radius: 5rem;
   padding: 1.5rem;
@@ -317,5 +321,9 @@ body {
 
   .element-action .bi {
     font-size: 2rem;
+  }
+
+  .section-main ul {
+    padding-left: 0;
   }
 }

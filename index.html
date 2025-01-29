@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Track and manage your expenses effortlessly with our Expense Tracker. Stay on top of your budget, save money, and achieve financial goals.">
+    <meta name="keywords" content="expense tracker, budget management, personal finance, money management, expense management, financial planning, track spending, save money, budgeting tool, financial tracker">
     <title>Expense Tracker | Homepage</title>
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -22,10 +22,13 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container justify-content-between">
           <a class="navbar-brand" aria-label="Expense Tracker Homepage" href="#">
-            <img src="assets/img/logo-dark.png" class="logo" width="105px" height="51px" alt="Expense Tracker Logo">
+            <picture>
+              <source srcset="assets/img/logo-dark.webp" class="logo-webp" type="image/webp">
+              <img src="assets/img/logo-dark.png" class="logo" width="105px" height="51px" height="51px" alt="Expense Tracker Logo">
+            </picture>
           </a>
 
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">Sign In</button>
         </div>
       </nav>
     </header>
@@ -45,7 +48,7 @@
               </ul>
     
               <div class="mb-4">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started Now</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">Get Started Now</button>
                 <button class="btn btn-outline-primary btnScroll" data-scroll="#about">Read more</button>
               </div>
             </div>
@@ -141,7 +144,7 @@
                 <p class="lead mt-2">At Budget Tracker, our mission is simple: to make managing your finances easy, accessible, and stress-free. We understand that budgeting and tracking expenses can be overwhelming, so we've created a user-friendly platform designed to help you take control of your financial future. With real-time tracking, personalized insights, and secure data storage, we're here to empower you to make informed choices, save more, and reach your financial goals. Join us and start your journey to financial freedom today!
                 </p>
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's start</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signIn">Let's start</button>
               </div>
             </div>
           </div>
@@ -155,44 +158,29 @@
           <div class="element mb-3 aos-hidden aos-delay">
               <div class="element-num text-light bg-primary">1</div> 
               <p>Easily log your income and expenses in just a few clicks.</p>
-              
-              <button type="button" class="element-action">
-                <i class="bi bi-image"></i>
-                <img src="https://placehold.co/100x200/0c1f30/FFFFFF/webp" loading="lazy" alt="">
-              </button>
+
+              <button type="button"  class="element-action" data-slide="0" data-bs-toggle="modal" data-bs-target="#hiwGallery"><i class="bi bi-image"></i></button>
           </div>
 
           <div class="element mb-3 aos-hidden aos-delay">
               <div class="element-num text-light bg-primary">2</div> 
               <p>Organize spending limits to control your financial habits.</p>
 
-              <button type="button" class="element-action">
-                <i class="bi bi-image"></i>
-
-                <img src="https://placehold.co/100x200/0c1f30/FFFFFF/webp" loading="lazy" alt="">
-              </button>
+              <button type="button" class="element-action" data-slide="1" data-bs-toggle="modal" data-bs-target="#hiwGallery"><i class="bi bi-image"></i></button>
           </div>
 
           <div class="element mb-3 aos-hidden aos-delay">
               <div class="element-num text-light bg-primary">3</div> 
               <p>Monitor Spending with Insights and Charts</p>
 
-              <button type="button" class="element-action">
-                <i class="bi bi-image"></i>
-
-                <img src="https://placehold.co/200x100/0c1f30/FFFFFF/webp" loading="lazy" alt="">
-              </button>
+              <button type="button" class="element-action" data-slide="2" data-bs-toggle="modal" data-bs-target="#hiwGallery"><i class="bi bi-image"></i></button>
           </div>
 
           <div class="element mb-3 aos-hidden aos-delay">
               <div class="element-num text-light bg-primary">4</div> 
               <p>Allocate funds to save and prepare for future expenses.</p>
 
-              <button type="button" class="element-action">
-                <i class="bi bi-image"></i>
-
-                <img src="https://placehold.co/200x100/0c1f30/FFFFFF/webp" loading="lazy" alt="">
-              </button>
+              <button type="button" class="element-action" data-slide="3" data-bs-toggle="modal" data-bs-target="#hiwGallery"><i class="bi bi-image"></i></button>
           </div>
         </div>
       </section>
@@ -201,7 +189,7 @@
         <div class="container">
           <h2 class="h2 text-center mb-5 aos-hidden aos-top">Testimonials</h2>
           
-          <div class="swiper mySwiper aos-hidden aos-top">
+          <div class="swiper swiperTestimonials aos-hidden aos-top">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial bg-sm border-sm">
@@ -366,7 +354,7 @@
         <div class="container text-center">
             <h2 class="h2 text-center mb-4 aos-hidden aos-top">Start your journey toward smarter financial habits today!</h2>
 
-            <button type="button" class="btn btn-primary aos-hidden aos-top" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started Now</button>
+            <button type="button" class="btn btn-primary aos-hidden aos-top" data-bs-toggle="modal" data-bs-target="#signIn">Get Started Now</button>
         </div>
       </section>
     </main>
@@ -390,11 +378,11 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="signInLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+            <h1 class="modal-title fs-5" id="signInLabel">Sign In</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <form action="#">
@@ -420,6 +408,64 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="hiwGallery" tabindex="-1" aria-labelledby="hiwGalleryLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content rounded-5 overflow-hidden">
+          <form action="#">
+            <div class="modal-body p-0 border-0">
+              <div class="swiper swiperModal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="assets/img/hiw-step-1.webp" type="image/webp">
+                      <img src="assets/img/hiw-step-1.jpg" class="img-fluid" loading="lazy" alt="Easily log your income and expenses in just a few clicks">
+                    </picture>
+
+                    <p>1/4 <br> Easily log your income and expenses in just a few clicks.</p>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="assets/img/hiw-step-2.webp" type="image/webp">
+                      <img src="assets/img/hiw-step-2.jpg" class="img-fluid" loading="lazy" alt="Organize spending limits to control your financial habits">
+                    </picture>
+
+                    <p>2/4 <br> Organize spending limits to control your financial habits.</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="assets/img/hiw-step-3.webp" type="image/webp">
+                      <img src="assets/img/hiw-step-3.jpg" class="img-fluid" loading="lazy" alt="Monitor Spending with Insights and Charts">
+                    </picture>
+
+                    <p>3/4 <br> Monitor Spending with Insights and Charts</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <picture>
+                      <source srcset="assets/img/hiw-step-4.webp" type="image/webp">
+                      <img src="assets/img/hiw-step-4.jpg" class="img-fluid" loading="lazy" alt="Allocate funds to save and prepare for future expenses">
+                    </picture>
+
+                    <p>4/4 <br> Allocate funds to save and prepare for future expenses.</p>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

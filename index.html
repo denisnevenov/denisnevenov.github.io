@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Home</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body >
+    <header class="header fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container justify-content-between">
+          <a class="navbar-brand" aria-label="Expense Tracker Homepage" href="#">
+            <img src="assets/img/logo-dark.png" class="logo" width="105px" height="51px" alt="Expense Tracker Logo">
+          </a>
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign In</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section section-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 aos-hidden">
+              <h1 class="h1 mb-5 mt-5 text-uppercase">Welcome to <br> <strong class="text-primary">Expense Tracker</strong></h1>
+              <h2 class="h4 mb-3">Take control of your finances, one click at a time</h2>
+              
+              <ul class="mb-4">
+                <li><i class="bi bi-check-circle text-primary"></i> Track your spending effortlessly.</li>
+                <li><i class="bi bi-check-circle text-primary"></i> Set savings goals to achieve financial freedom.</li>
+                <li><i class="bi bi-check-circle text-primary"></i> Visualize your budget with clear, interactive charts.</li>
+              </ul>
+    
+              <div class="mb-4">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started Now</button>
+                <button class="btn btn-outline-primary btnScroll" data-scroll="#about">Read more</button>
+              </div>
+            </div>
+            
+            <div class="col-xl-6 position-relative">
+              <img src="assets/img/expense-tracker.jpg" class="ms-4 aos-hidden aos-right" alt="Expense Tracker Dashboard">
+              <img src="assets/img/expense-tracker-mobile.jpg" class="position-absolute bottom-0 start-0 aos-hidden aos-right aos-delay" alt="Expense Tracker Dashboard Mobile version" width="216" height="345">
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      <section class="section">
+        <div class="container">
+          <h2 class="h2 text-center mb-5 aos-hidden aos-top">Features</h2>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 aos-hidden">
+              <div class="box">
+                <i class="bi bi-clock fs-1 text-primary"></i>
+                <h3 class="h4 mt-2"> Real-Time Expense Tracking</h3>
+                <p class="mb-0">Track your spending instantly as you add new transactions, ensuring you always have up-to-date financial information at your fingertips.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 aos-hidden aos-delay">
+              <div class="box">
+                <i class="bi bi-sliders fs-1 text-primary"></i>
+                <h3 class="h4 mt-2">Customizable Budgeting</h3>
+                <p class="mb-0">Set personalized budgets for various categories like groceries, entertainment, and bills to stay on top of your finances and avoid overspending.
+                </div>
+              </p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 aos-hidden aos-delay">
+              <div class="box">
+                <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+                <h3 class="h4 mt-2">Financial Insights and Reports</h3>
+                <p class="mb-0">Gain actionable insights with detailed reports and graphs that show where your money is going, helping you make smarter financial decisions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 aos-hidden aos-delay">
+              <div class="box">
+                <i class="bi bi-check2-square fs-1 text-primary"></i>
+                <h3 class="h4 mt-2">Goal Setting and Savings Plans</h3>
+                <p class="mb-0">Set specific financial goals, such as saving for a vacation or an emergency fund, and track your progress with ease.</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 aos-hidden aos-delay">
+              <div class="box">
+                <i class="bi bi-currency-exchange fs-1 text-primary"></i>
+                <h3 class="h4 mt-2">Multiple Currency Support</h3>
+                <p class="mb-0">Track your expenses in different currencies, ideal for travelers or users who deal with multiple accounts or international transactions.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4 aos-hidden aos-delay">
+              <div class="box">
+                <i class="bi bi-cloud fs-1 text-primary"></i>
+                <h3 class="h4 mt-2">Secure Cloud Syncing</h3>
+                <p class="mb-0">Your data is automatically backed up and synced across all devices, ensuring you can access your budget anywhere, anytime, with peace of mind.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-bg" id="about">
+        <div class="container">
+          <h2 class="h2 text-center mb-5 aos-hidden aos-top">About us</h2>
+
+          <div class="row">
+            <div class="col-lg-6 aos-hidden">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="assets/img/about-us-office.jpg" class="img-fluid rounded-5" loading="lazy" alt="Our team working">
+                </div>
+                <div class="col-md-6 mt-5 pt-2">
+                  <img src="assets/img/about-us-building.jpg" class="img-fluid rounded-5" loading="lazy" alt="Our office building">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 aos-hidden aos-right">
+              <div class="ps-lg-5">
+                <p class="lead mt-2">At Budget Tracker, our mission is simple: to make managing your finances easy, accessible, and stress-free. We understand that budgeting and tracking expenses can be overwhelming, so we've created a user-friendly platform designed to help you take control of your financial future. With real-time tracking, personalized insights, and secure data storage, we're here to empower you to make informed choices, save more, and reach your financial goals. Join us and start your journey to financial freedom today!
+                </p>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Let's start</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="h2 text-center mb-5 aos-hidden aos-top">How it Works</h2>
+        
+          <div class="element mb-3 aos-hidden aos-delay">
+              <div class="element-num text-light bg-primary">1</div> 
+              <p>Easily log your income and expenses in just a few clicks.</p>
+              
+              <button type="button" class="element-action">
+                <i class="bi bi-image"></i>
+                <img src="https://placehold.co/100x200/0c1f30/FFFFFF/webp" loading="lazy" alt="">
+              </button>
+          </div>
+
+          <div class="element mb-3 aos-hidden aos-delay">
+              <div class="element-num text-light bg-primary">2</div> 
+              <p>Organize spending limits to control your financial habits.</p>
+
+              <button type="button" class="element-action">
+                <i class="bi bi-image"></i>
+
+                <img src="https://placehold.co/100x200/0c1f30/FFFFFF/webp" loading="lazy" alt="">
+              </button>
+          </div>
+
+          <div class="element mb-3 aos-hidden aos-delay">
+              <div class="element-num text-light bg-primary">3</div> 
+              <p>Monitor Spending with Insights and Charts</p>
+
+              <button type="button" class="element-action">
+                <i class="bi bi-image"></i>
+
+                <img src="https://placehold.co/200x100/0c1f30/FFFFFF/webp" loading="lazy" alt="">
+              </button>
+          </div>
+
+          <div class="element mb-3 aos-hidden aos-delay">
+              <div class="element-num text-light bg-primary">4</div> 
+              <p>Allocate funds to save and prepare for future expenses.</p>
+
+              <button type="button" class="element-action">
+                <i class="bi bi-image"></i>
+
+                <img src="https://placehold.co/200x100/0c1f30/FFFFFF/webp" loading="lazy" alt="">
+              </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="h2 text-center mb-5 aos-hidden aos-top">Testimonials</h2>
+          
+          <div class="swiper mySwiper aos-hidden aos-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“Incredibly user-friendly and intuitive!”</h3>
+
+                  <p>"This Expense Tracker made managing my finances a breeze. The interface is clean and simple, yet packed with features that help me stay on top of my budget. I especially love the detailed insights and charts that show me exactly where my money is going. Highly recommended for anyone looking to take control of their spending!"</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>John Doe</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“A game-changer for my financial habits.”</h3>
+
+                  <p>"I've tried several budgeting apps before, but this one stands out. The ability to categorize expenses and set limits helped me cut unnecessary costs. Plus, the seamless experience across devices ensures I can track my spending anytime, anywhere. It's like having a personal financial advisor in my pocket!"</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>Ada Kwame</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“Perfect for planning and saving!”</h3>
+
+                  <p>"This app has transformed how I handle my money. I love the ability to set goals and monitor my progress toward saving for big purchases. The real-time updates and reminders keep me accountable, and the insights have taught me how to spend smarter. It's a must-have tool for anyone serious about managing their budget."</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>Jane Smith</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“Incredibly user-friendly and intuitive!”</h3>
+
+                  <p>"This Expense Tracker made managing my finances a breeze. The interface is clean and simple, yet packed with features that help me stay on top of my budget. I especially love the detailed insights and charts that show me exactly where my money is going. Highly recommended for anyone looking to take control of their spending!"</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>Emily Chan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“Incredibly user-friendly and intuitive!”</h3>
+
+                  <p>"This Expense Tracker made managing my finances a breeze. The interface is clean and simple, yet packed with features that help me stay on top of my budget. I especially love the detailed insights and charts that show me exactly where my money is going. Highly recommended for anyone looking to take control of their spending!"</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>John Doe</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“A game-changer for my financial habits.”</h3>
+
+                  <p>"I've tried several budgeting apps before, but this one stands out. The ability to categorize expenses and set limits helped me cut unnecessary costs. Plus, the seamless experience across devices ensures I can track my spending anytime, anywhere. It's like having a personal financial advisor in my pocket!"</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>Ada Kwame</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial bg-sm border-sm">
+                  <h3 class="h4 mb-3">“Perfect for planning and saving!”</h3>
+
+                  <p>"This app has transformed how I handle my money. I love the ability to set goals and monitor my progress toward saving for big purchases. The real-time updates and reminders keep me accountable, and the insights have taught me how to spend smarter. It's a must-have tool for anyone serious about managing their budget."</p>
+
+                  <div class="author">
+                    <i class="bi bi-person-circle fs-1 text-primary"></i>
+
+                    <span>Jane Smith</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination position-relative mt-4"></div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="section">
+        <div class="container">
+          <h2 class="h2 text-center mb-5 aos-hidden aos-top">FAQ</h2>
+          
+          <div class="mb-3 aos-hidden aos-delay">
+            <div class="element mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
+              <div class="element-num text-light bg-primary"><i class="bi bi-question fs-1"></i> </div> 
+              <p>How do I add a new expense or income?</p>
+
+              <span class="element-action">
+                <i class="bi bi-chevron-down"></i>
+                <i class="bi bi-chevron-up"></i>
+              </span>
+            </div>
+            
+            <div class="collapse" id="collapseFaq1">
+              <div class="p-4 border-sm rounded bg-sm mx-md-4">Click the "Add Transaction" button, choose a category, and enter the amount and details. It's quick and easy to keep your finances up-to-date.</div>
+            </div>
+          </div>
+
+          <div class="mb-3 aos-hidden aos-delay">
+            <div class="element mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+              <div class="element-num text-light bg-primary"><i class="bi bi-question fs-1"></i> </div> 
+              <p>Can I customize spending categories and budgets?</p>
+
+              <span class="element-action">
+                <i class="bi bi-chevron-down"></i>
+                <i class="bi bi-chevron-up"></i>
+              </span>
+            </div>
+            
+            <div class="collapse" id="collapseFaq2">
+              <div class="p-4 border-sm rounded bg-sm mx-md-4">Yes, you can create, edit, or delete categories and set specific budgets for each one to match your financial goals.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 aos-hidden aos-delay">
+            <div class="element mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+              <div class="element-num text-light bg-primary"><i class="bi bi-question fs-1"></i> </div> 
+              <p>Is my financial data safe and secure?</p>
+
+              <span class="element-action">
+                <i class="bi bi-chevron-down"></i>
+                <i class="bi bi-chevron-up"></i>
+              </span>
+            </div>
+            
+            <div class="collapse" id="collapseFaq3">
+              <div class="p-4 border-sm rounded bg-sm mx-md-4">Absolutely. We use encryption to protect your data, ensuring your personal and financial information remains private and secure.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-bg-primary section-started">
+        <div class="container text-center">
+            <h2 class="h2 text-center mb-4 aos-hidden aos-top">Start your journey toward smarter financial habits today!</h2>
+
+            <button type="button" class="btn btn-primary aos-hidden aos-top" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Started Now</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer pt-5 pb-2">
+      <div class="container">
+        <div class="d-flex justify-content-center mb-4">
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="screenMode">
+            <label class="form-check-label" for="screenMode">Light Mode</label>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3 text-center mb-4">
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook" ><i class="fs-3 bi bi-facebook"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="X" ><i class="fs-3 bi bi-twitter-x"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram" ><i class="fs-3 bi bi-instagram"></i></a>
+        </div>
+        <p class="text-center text-body-secondary">© 2024 Expense Tracker, Inc</p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="#">
+            <div class="modal-body">
+              <div class="form-floating mb-3 mt-3">
+                <input type="email" id="email" class="form-control" placeholder="email" required>
+
+                <label for="email">Username</label>
+              </div>
+
+              <div class="form-floating mb-2">
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+
+                <label for="password">Password</label>
+              </div>
+
+              <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary w-100">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
